@@ -1,7 +1,23 @@
 <!DOCTYPE html>
 <html>
     <head>
+
+        <meta property="og:title" content="Junhyung So">
+        <meta property="og:description" content="Hello, my name is Junhyung So, currently a student at Boston College, pursuing a Bachelor of Science degree in Computer Science. Interested in software and web development, I aspire to use my current and future knowledge to showcase my passion for the subject. I would like to develop and update software programs with top quality user interfaces that can be used by businesses to fulfill their tasks.
+
+        Outside of programming, I have plenty of interests and hobby as well. For example, I love watching and playing soccer, playing video games with my friends, and participating in volunteering services. Always curious to learn more, I always try to keep myself busy to accomplish more things!">
+        <meta property="og:image" content="https://bcwebcourse.github.io/portfolio-junhyungsoCSS/Pictures/me">
+        <meta property="og:url" content="https://bcwebcourse.github.io/portfolio-junhyungsoCSS/">
+        <meta name="twitter:card" content="summary_large_image">
+
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
+        <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=ZCOOL+XiaoWei&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css"/>
         <meta charset = "UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title> Junhyung So </title>
     </head>
 
@@ -11,7 +27,7 @@
         <div class= "container">
             <nav>
                 <ul>
-                    <li>
+                     <li>
                         <a href ="#about">About</a>
                     </li>
                     <li>
@@ -26,144 +42,139 @@
                 </ul>
             </nav>
             <section id = "about">
-                <div>
-                <h1> Junhyung So</h1>
-                    <img src="Pictures/me.png" width="20%">
-                    <p>
-                        <strong> Student @ Boston College</strong><br>
-                        soju@bc.edu <br>
-                        <a href="Files/Resume.pdf" target="_blank">Resume</a> |
-                        <a href="https://twitter.com/junhyungso" target="_blank">Twitter</a> |
-                        <a href="https://linkedin.com/in/junhyungso" target="_blank">LinkedIn</a> 
-                    </p>
+                <h1 class="animated heartBeat"> Junhyung So</h1>
+                <div class="row">
+                    <div class="col-6">
+                        <img src="Pictures/me.png" class="center">
+                        <div class= "leftmargin">
+                            <p>
+                            <strong> Student @ Boston College</strong><br>
+                            soju@bc.edu <br>
+                            <a href="Files/Resume.pdf" target="_blank"><i class="far fa-file"></i> Resume</a> |
+                            <a href="https://twitter.com/junhyungso" target="_blank"><i class="fab fa-twitter"></i> Twitter</a> |
+                            <a href="https://linkedin.com/in/junhyungso" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a> 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <p>
+                            Hello, my name is Junhyung So, currently a <strong>student at Boston College</strong>, pursuing a <strong>Bachelor of Science degree in Computer Science.</strong> Interested in <strong>software and web development</strong>, I aspire to use my current and future knowledge to showcase my passion for the subject. I would like to develop and update software programs with top quality user interfaces that can be used by businesses to fulfill their tasks.
+                            </p>
+                            <p>
+                            Outside of programming, I have plenty of interests and hobby as well. For example, I love watching and playing soccer, playing video games with my friends, and participating in volunteering services. Always curious to learn more, I always try to keep myself busy to accomplish more things!
+                            </p>                   
+                    </div>
+
                 </div>
 
-
-                <div>
-                    <p>
-                    Hello, my name is Junhyung So, currently a <strong>student at Boston College</strong>, pursuing a <strong>Bachelor of Science degree in Computer Science.</strong> Interested in <strong>software and web development</strong>, I aspire to use my current and future knowledge to showcase my passion for the subject. I would like to develop and update software programs with top quality user interfaces that can be used by businesses to fulfill their tasks.
-                    </p>
-                    <p>
-                    Outside of programming, I have plenty of interests and hobby as well. For example, I love watching and playing soccer, playing video games with my friends, and participating in volunteering services. Always curious to learn more, I always try to keep myself busy to accomplish more things!
-                    </p>
-                </div>
+            </div>
             </section>
             <section id = "skills">
-                <h1>Skills</h1>
-                <div>
-                    <div>
+                    <div class= "container">
+                        <h1>Skills</h1>
+                        <div class = "center">
                         <p> Python, Java, C, HTML, CSS, JavaScript, Excel </p>
+                        </div>
                     </div>
-                </div>
             </section>
+
             <section id = "news">
-                <h1>News</h1>
-                <div>
-                    <div>
-                        <div>
+                <div class= "container">
+                    <h1>News</h1>
+                    <div class="row">
+                        <div class="col-8">
                             <strong>Awarded Citizenship of United States</strong>
                         </div>
 
-                        <div>
-                           January 9, 2020
+                        <div class="col-4">
+                            January 9, 2020
                         </div>
                         <br>
                     </div>
-                    <div>
-                        <div>
+                    <div class="row">
+                        <div class="col-8">
                             <strong>Workshop Lead and Treasurer at MakeBC</strong>
                         </div>
 
-                        <div>
-                           October 1, 2019
+                        <div class="col-4">
+                            October 1, 2019
                         </div>
                         <br>
 
                     </div>
-                    <div>
-                        <div>
+                    <div class="row">
+                        <div class="col-8">
                             <strong>Intern at Gundam Planet Basanova Lab</strong>
                         </div>
 
-                        <div>
-                          June 5, 2019
+                        <div class="col-4">
+                            June 5, 2019
                         </div>
                         <br>
 
                     </div>
                 </div>
             </section>
+
             <section id = "projects">
-                <h1>Projects</h1>
-                <div>
-                    <div>
-                        <div>
-                            <div>
-                            <a href = "shell.html"><strong>Linux Command Line Shell</strong></a>
+                <div class= "container">
+                    <h1>Projects</h1>
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="topmargin">
+                            <a href = "shell.html"><strong>Linux Command Line Shell</strong></a><br>
+                            <strong>Junhyung So</strong><br>
+                            School Project<br>
+                            <span><a href="Files/Report.pdf" target="_blank"><i class="far fa-file-alt"></i> Paper</a></span><br>
+                                <span class="tag c">C</span>
+                                <span class="tag shell"> Shell</span>
                             </div>
-                            <div>
-                                <strong>Junhyung So</strong>
-                            </div>
-                            <div>
-                                School Project
-                            </div>
-                            <div>
-                                <span>
-                                    <span><a href="Files/Report.pdf"_blank">Paper</a></span>
-                                </span>
-                                <span>
-                              
-                                </span>
-                            </div>
-                            <div>
+                        </div>
 
+                        <div class="col-6">
+                            <img src="Pictures/shell.png" width="100%"> 
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="topmargin">
+                            <a href = "sylvan.html"><strong>Sylvan Nails Business Website</strong></a><br>
+                            <strong>Junhyung So</strong><br>
+                            Personal Project<br>
+                            <span class="tag business">
+                              Business
+                            </span>
+                            <span class="tag nails">
+                             Nails
+                            </span>
                             </div>
                         </div>
-                        <div>
-                            <img src="Pictures/shell.png" width="50%"> 
+                        <div class="col-6">
+                            <img src="Pictures/sylvannailslogo.jpg" width="100%"> 
                         </div>
                     </div>
-                    <br>
-                    <div>
-                        <div>
-                            <a href = "sylvan.html"><strong>Sylvan Nails Business Website</strong></a>
-                        </div>
-                        <div>
-                            <strong>Junhyung So</strong>
-                        </div>
-                    </div>
-                    <div>
-                        <div>
-                            Personal Project
-                        </div>
-                        <div>
-                            <img src="Pictures/sylvannailslogo.jpg" width="50%"> 
-                        </div>
-                    </div>
-                    <br>
-                    <div>
-                        <div>
-                            <a href = "memorymgr.html"><strong>Dynamic Memory Manager</strong></a>
-                        </div>
-                        <div>
-                            <strong>Junhyung So</strong>
-                        </div>
-                    </div>
-                    <div>
-                        <div>
-                            School Project
-                        </div>
-                        <div>
-                            <img src="Pictures/dynamicmemory.jpg" width="50%"> <br>
-                        </div>
-                    </div>
-                </div>
 
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="topmargin">
+                            <a href = "memorymgr.html"><strong>Dynamic Memory Manager</strong></a><br>
+                            <strong>Junhyung So</strong><br>
+                            School Project<br>
+                                <span class="tag c"> C </span>
+                                <span class="tag memory">Memory</span><br>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <img src="Pictures/dynamicmemory.jpg" width="100%"> 
+                        </div>
+                    </div>
+            </div>
             </section>
-            <br>
             <footer> Copyright © 2020 Junhyung So</footer>
-        </div>
 
 
     </body>
+
+
 </html>
