@@ -1,0 +1,76 @@
+{
+    "about":{
+      "name":"Junhyung So",
+      "title":"Student @ Boston College",
+      "photo":"Pictures/me.png",
+      "email":"soju@bc.edu",
+      "resume": "Resume",
+      "twitter": "twitter",
+      "linkedin": "linkedin",
+      "description": "Hello, my name is Junhyung So, currently a <strong>student at Boston College</strong>, pursuing a <strong>Bachelor of Science degree in Computer Science.</strong> Interested in <strong>software and web development</strong>, I aspire to use my current and future knowledge to showcase my passion for the subject. I would like to develop and update software programs with top quality user interfaces that can be used by businesses to fulfill their tasks. Outside of programming, I have plenty of interests and hobby as well. For example, I love watching and playing soccer, playing video games with my friends, and participating in volunteering services. Always curious to learn more, I always try to keep myself busy to accomplish more things!"
+    },
+   
+ 
+    "skills":
+      {
+          "skills": "Python, Java, C, HTML, CSS, JavaScript, Excel"
+      },
+  
+
+    "news":[
+        {
+            "title": "Awarded Citizenship of United States",
+            "date": "January 9, 2020"
+        },
+        {
+            "title": "Workshop Lead and Treasurer at MakeBC",
+            "date": "October 1, 2019"
+        },
+        {
+            "title": "Intern at Gundam Planet Basanova Lab",
+            "date": "June 5, 2019"
+        }
+
+    ],
+
+    "projects":[
+        {
+      "id":"Linux Command Line Shell",
+      "title": "Linux Command Line Shell",
+      "authors": "Junhyung So",
+      "teaser": "./Pictures/shell.png",
+      "tags":["C", " Shell"],
+      "date": "Created Dec 15, 2019",
+      "materials": [
+        { 
+          "label": "Paper",
+          "path": "Files/Report.pdf"
+        }
+      ],
+      
+      "description": "I have implemented a simple shell program that resembles a Linux command shell. Written in C language, it runs simple shell commands such as ls, wc, cd, echo, sleep, that allows user to communicate with folders and files in the respective directories."
+        },
+
+
+        {
+      "id":"Sylvan Nails",
+      "title": "Sylvan Nails",
+      "authors": "Junhyung So",
+      "teaser": "./Pictures/sylvannailslogo.jpg",
+      "tags":["Business", " Nails"],
+      "date": "Created July 21, 2019",
+      "description": "I created a website for a local nail salon business using Squarespace, incorporating my knowledge in Photoshop and CSS. The owner of the business contacted me, wishing to improve its popularity and show off its unique nail treatments. We decided that the creation of a clean, appealing website and allowing easier access to our website from Google searches was a good place to start. By gathering pictures of the business interiors, its customers, and testimonials, I was able to produce such webs Please check out the site at: sylvannails.com and let me know if you have any questions or suggestions to improve the website!"
+    },
+
+    {
+        "id":"Dynamic Memory Manager",
+        "title": "Dynamic Memory Manager",
+        "authors": "Junhyung So",
+        "teaser": "Pictures/dynamicmemory.jpg",
+        "tags":["C", " Memory"],
+        "date": "Created March 23, 2019",
+        "description": "In C, functions such as malloc() and free() in the LibC library allow the user to allocate and free memory. Given a requested amount of memory, I implemented functions that allow internal heap memory to be manually allocated and freed along with the ability to perform garbage collection using bit manipulations and arithmetic calculations. Additionally, a coalescing function was incorporated into the free function in order to solve external fragmentation issues when freeing.If you would like to see the codes, written in C, send me an email at junhyungso5551@gmail.com and I will be glad to share with you!"
+     }
+        
+    ]
+}
