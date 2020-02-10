@@ -39,7 +39,7 @@
       "title": "Linux Command Line Shell",
       "authors": "Junhyung So",
       "teaser": "./Pictures/shell.png",
-      "tags":["C", " Shell"],
+      "tags":["C", "Shell"],
       "date": "Created Dec 15, 2019",
       "materials": [
         { 
@@ -57,7 +57,7 @@
       "title": "Sylvan Nails",
       "authors": "Junhyung So",
       "teaser": "./Pictures/sylvannailslogo.jpg",
-      "tags":["Business", " Nails"],
+      "tags":["Business", "Nails"],
       "date": "Created July 21, 2019",
       "description": "I created a website for a local nail salon business using Squarespace, incorporating my knowledge in Photoshop and CSS. The owner of the business contacted me, wishing to improve its popularity and show off its unique nail treatments. We decided that the creation of a clean, appealing website and allowing easier access to our website from Google searches was a good place to start. By gathering pictures of the business interiors, its customers, and testimonials, I was able to produce such webs Please check out the site at: sylvannails.com and let me know if you have any questions or suggestions to improve the website!"
     },
@@ -67,7 +67,7 @@
         "title": "Dynamic Memory Manager",
         "authors": "Junhyung So",
         "teaser": "Pictures/dynamicmemory.jpg",
-        "tags":["C", " Memory"],
+        "tags":["C", "Memory"],
         "date": "Created March 23, 2019",
         "description": "In C, functions such as malloc() and free() in the LibC library allow the user to allocate and free memory. Given a requested amount of memory, I implemented functions that allow internal heap memory to be manually allocated and freed along with the ability to perform garbage collection using bit manipulations and arithmetic calculations. Additionally, a coalescing function was incorporated into the free function in order to solve external fragmentation issues when freeing.If you would like to see the codes, written in C, send me an email at junhyungso5551@gmail.com and I will be glad to share with you!"
      }
