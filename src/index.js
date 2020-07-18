@@ -1,9 +1,6 @@
 import MainPage from './Files/MainPage.js';
 import ProjectPage from './Files/ProjectPage.js';
 
-
-
-
 fetch('Files/data.json')
 .then(response => {
   return response.json();
