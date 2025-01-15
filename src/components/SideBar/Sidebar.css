@@ -1,0 +1,25 @@
+.sidebar {
+  width: 200px;
+  background-color: #303030;
+  color: white;
+  padding: 20px;
+  min-height: calc(100vh - 144px);
+}
+
+.sidebar__menu {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar__menu__item {
+  margin: 15px 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.sidebar__menu li:hover {
+  color: #ff0000;
+}

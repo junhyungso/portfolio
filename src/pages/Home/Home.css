@@ -1,0 +1,15 @@
+.container {
+  display: flex;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: row;
+}
+
+.profile-container {
+}
+
+.profile-image {
+  border-radius: 50%;
+}

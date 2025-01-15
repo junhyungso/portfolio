@@ -1,0 +1,12 @@
+.banner-container {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+.banner-image {
+  height: 180px;
+  width: 80%;
+  margin: 10px;
+  border-radius: 16px;
+}

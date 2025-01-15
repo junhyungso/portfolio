@@ -16,6 +16,13 @@ const Header: React.FC = () => {
     <Navbar>
       <Link to="/">Home</Link>
       <div>
+        <input
+          type="text"
+          className="header__search"
+          placeholder="Search projects..."
+        />
+      </div>
+      <div>
         <Link to="/projects">Projects</Link>
         <Link to="/about">About</Link>
         <Link to="/contact">Contact</Link>

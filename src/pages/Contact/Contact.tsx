@@ -13,7 +13,6 @@ const Key = styled.div<{ keyType: string; position?: number }>`
   user-select: none;
   transition: transform 0.1s, box-shadow 0.1s;
 
-  transition: transform 0.1s, background-color 0.1s;
   width: ${(props) => (props.keyType === 'white' ? '80px' : '60px')};
   height: ${(props) => (props.keyType === 'white' ? '200px' : '120px')};
   background-color: ${(props) => (props.keyType === 'white' ? '#fff' : '#000')};

@@ -33,7 +33,7 @@ body {
 
 main {
   min-height: calc(100vh - 144px);
-  background-color: #fff;
+  background-color: #1f1f1f;
 }
 
 button {
@@ -57,7 +57,7 @@ button:focus-visible {
 
 @media (prefers-color-scheme: light) {
   :root {
-    color: #213547;
+    color: #f1f1f1;
     background-color: #ffffff;
   }
   a:hover {
