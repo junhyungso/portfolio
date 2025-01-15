@@ -3,13 +3,31 @@
 }
 
 .main-content {
+}
+
+.about-content {
   display: flex;
   flex-direction: row;
+  margin: 0px 20px;
 }
 
 .profile-container {
+  margin: 10px 30px;
 }
 
 .profile-image {
   border-radius: 50%;
+}
+
+.intro {
+  width: 800px;
+  margin: 20px 40px;
+}
+
+.project-list {
+  display: flex;
+}
+
+.project {
+  border-right: 1px solid white;
 }

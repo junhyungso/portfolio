@@ -5,8 +5,11 @@ const Sidebar = () => {
   return (
     <aside className="sidebar">
       <ul className="sidebar__menu">
+        <Link to="/" className="sidebar__menu__item">
+          Home
+        </Link>
         <Link to="/about" className="sidebar__menu__item">
-          About
+          My Journey
         </Link>
         <Link to="/projects" className="sidebar__menu__item">
           Projects

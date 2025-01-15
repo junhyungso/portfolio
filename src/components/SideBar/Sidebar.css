@@ -1,6 +1,6 @@
 .sidebar {
   width: 200px;
-  background-color: #303030;
+  background-color: #000;
   color: white;
   padding: 20px;
   min-height: calc(100vh - 144px);
@@ -20,6 +20,6 @@
   transition: color 0.3s;
 }
 
-.sidebar__menu li:hover {
-  color: #ff0000;
+.sidebar__menu__item:hover {
+  background-color: 717171;
 }

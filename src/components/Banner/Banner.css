@@ -2,11 +2,13 @@
   display: flex;
   justify-content: center;
   margin: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 .banner-image {
-  height: 180px;
-  width: 80%;
+  height: 250px;
   margin: 10px;
   border-radius: 16px;
+  flex-grow: 1;
 }
