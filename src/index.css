@@ -31,7 +31,8 @@ body {
 }
 
 main {
-  min-height: calc(100vh - 144px);
+  display: flex;
+  min-height: 100vh;
   background-color: #000;
 }
 

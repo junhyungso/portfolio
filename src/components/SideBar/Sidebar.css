@@ -1,9 +1,19 @@
+.minimized-sidebar {
+  width: 50px;
+  background-color: #000;
+  color: white;
+  padding: 20px;
+  min-height: calc(100vh - 144px);
+  border-right: 1px solid white;
+}
+
 .sidebar {
   width: 200px;
   background-color: #000;
   color: white;
   padding: 20px;
   min-height: calc(100vh - 144px);
+  border-right: 1px solid white;
 }
 
 .sidebar__menu {
@@ -18,8 +28,12 @@
   cursor: pointer;
   font-size: 16px;
   transition: color 0.3s;
+  display: flex;
 }
 
 .sidebar__menu__item:hover {
   background-color: 717171;
+}
+.sidebar__menu__item__icon {
+  margin-right: 5px;
 }

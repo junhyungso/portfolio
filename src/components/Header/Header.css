@@ -5,6 +5,24 @@
   color: white;
 }
 
+.menu-logo {
+  display: flex;
+}
+.menu-icon {
+  border-radius: 50px;
+  padding: 5px;
+  margin: 18px 10px 0px 10px;
+}
+
+.menu-icon:hover {
+  background-color: #444;
+}
+
+.logo {
+  display: flex;
+  margin: auto;
+}
+
 .search-bar-container {
   display: flex;
   flex: 1;

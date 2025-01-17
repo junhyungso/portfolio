@@ -1,14 +1,7 @@
-.banner-container {
-  display: flex;
-  justify-content: center;
-  margin: auto;
-  max-width: 100%;
-  height: auto;
-}
-
 .banner-image {
-  height: 250px;
-  margin: 10px;
+  display: block;
+  width: 80%;
+  margin: 10px auto;
   border-radius: 16px;
   flex-grow: 1;
 }
