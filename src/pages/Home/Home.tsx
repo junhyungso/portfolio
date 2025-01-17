@@ -3,6 +3,7 @@ import GithubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 import Me from '../../assets/me.jpeg';
+import Resume from '../../assets/Resume_JunhyungSo.pdf';
 import Banner from '../../components/Banner/Banner';
 import './Home.css';
 
@@ -37,16 +38,29 @@ const Home = () => {
               This portfolio website is inspired by my favorite website Youtube
               (Dark Mode).
             </p>
-            <button>
-              <a href="/assets/Resume_JunhyungSo.pdf" target="__blank">
+            <div className="link-icon-container">
+              <button
+                onClick={() => window.open(Resume)}
+                className="resume-button"
+              >
                 Resume
-              </a>
-            </button>
-            <LinkedInIcon />
-            <GithubIcon />
+              </button>
+              <LinkedInIcon
+                onClick={() =>
+                  window.open('https://www.linkedin.com/in/junhyungso/')
+                }
+                className="link-icon"
+                fontSize="large"
+              />
+              <GithubIcon
+                onClick={() => window.open('https://github.com/junhyungso/')}
+                className="link-icon"
+                fontSize="large"
+              />
+            </div>
           </div>
         </div>
-        <hr />
+        {/* <hr />
         <div>
           <h1>Featured Projects</h1>
           <div className="project-list">
@@ -54,7 +68,7 @@ const Home = () => {
             <div className="project">B</div>
             <div className="project-last">C</div>
           </div>
-        </div>
+        </div> */}
       </div>
     </>
   );

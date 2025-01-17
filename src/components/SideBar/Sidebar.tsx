@@ -11,19 +11,27 @@ const Sidebar = ({ isSideMenuMinimized }: { isSideMenuMinimized: boolean }) => {
       <ul className="sidebar__menu">
         <Link to="/" className="sidebar__menu__item">
           <HomeIcon className="sidebar__menu__item__icon" />
-          {!isSideMenuMinimized && <div>Home</div>}
+          {!isSideMenuMinimized && (
+            <div className="sidebar__menu__item__text">Home</div>
+          )}
         </Link>
         <Link to="/about" className="sidebar__menu__item">
           <MovingIcon className="sidebar__menu__item__icon" />
-          {!isSideMenuMinimized && <div>My Journey</div>}
+          {!isSideMenuMinimized && (
+            <div className="sidebar__menu__item__text">My Journey</div>
+          )}
         </Link>
         <Link to="/projects" className="sidebar__menu__item">
           <CodeIcon className="sidebar__menu__item__icon" />
-          {!isSideMenuMinimized && <div>Projects</div>}
+          {!isSideMenuMinimized && (
+            <div className="sidebar__menu__item__text">Projects</div>
+          )}
         </Link>
         <Link to="/contact" className="sidebar__menu__item">
           <ContactIcon className="sidebar__menu__item__icon" />
-          {!isSideMenuMinimized && <div>Contact</div>}
+          {!isSideMenuMinimized && (
+            <div className="sidebar__menu__item__text">Contact</div>
+          )}
         </Link>
       </ul>
     </aside>

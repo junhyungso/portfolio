@@ -1,3 +1,5 @@
+import './MyJourney.css';
+
 const MyJourney = () => {
   const milestones = [
     {

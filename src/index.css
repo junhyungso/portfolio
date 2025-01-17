@@ -18,9 +18,7 @@ a {
   color: white;
   text-decoration: inherit;
 }
-a:hover {
-  background-color: #717171;
-}
+
 h1 {
   margin: 0;
 }
@@ -32,7 +30,6 @@ body {
 
 main {
   display: flex;
-  min-height: 100vh;
   background-color: #000;
 }
 

@@ -4,7 +4,7 @@
 
 .main-content {
   width: 100%;
-  margin: 1rem;
+  margin: 0 1rem 1rem 1rem;
 }
 
 .about-content {
@@ -34,4 +34,15 @@
 
 .project {
   border-right: 1px solid white;
+}
+
+.link-icon-container {
+  display: flex;
+}
+.resume-button {
+  margin: 0px 10px 0px 0px;
+}
+.link-icon {
+  margin: auto 10px;
+  cursor: pointer;
 }
