@@ -3,38 +3,22 @@ import './MyJourney.css';
 const MyJourney = () => {
   const milestones = [
     {
-      year: '2018',
-      title: 'Started My Coding Journey',
-      description:
-        'Learned HTML, CSS, and JavaScript. Built my first static website.',
+      year: 'December 2021 - October 2023',
+      title: 'Acorns - Software Engineer',
+      description: 'Built Custom Portfolios.',
       icon: '👨‍💻',
     },
     {
-      year: '2020',
-      title: 'First Internship',
-      description:
-        'Worked as a frontend intern, building responsive web pages.',
-      icon: '💼',
-    },
-    {
-      year: '2021',
-      title: 'Graduated with a CS Degree',
-      description:
-        "Completed my Bachelor's in Computer Science with a 3.7 GPA.",
-      icon: '🎓',
-    },
-    {
-      year: '2022',
-      title: 'Joined Acorns as a Software Engineer',
-      description: 'Contributed to major projects using React and TypeScript.',
-      icon: '🚀',
-    },
-    {
-      year: '2023',
-      title: 'Refined My Skills',
-      description:
-        'Dived deeper into performance optimization and accessibility.',
+      year: 'December 2021 - November 2021',
+      title: 'MEK Review - Data Management Specialist',
+      description: 'Built Custom Portfolios.',
       icon: '🛠️',
+    },
+    {
+      year: 'June 2020 - June 2021',
+      title: 'WW International - Software Engineering Intern',
+      description: 'Built Custom Portfolios.',
+      icon: '🚀',
     },
   ];
 
@@ -61,17 +45,6 @@ const MyJourney = () => {
             </div>
           </div>
         ))}
-      </section>
-
-      {/* Reflection Section */}
-      <section className="reflection">
-        <h2>Looking Ahead</h2>
-        <p>
-          The journey so far has been incredible, filled with learning and
-          growth. I’m excited about the future, where I aim to tackle even more
-          challenging projects, expand my skill set, and make meaningful
-          contributions to the tech world.
-        </p>
       </section>
     </div>
   );

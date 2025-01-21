@@ -20,11 +20,18 @@
 
 .logo {
   display: flex;
-  margin-top: 24px;
+  margin-top: 20px;
+  margin-left: 10px;
 }
 
 .logo:hover {
   background-color: #000;
+}
+
+.logo-text {
+  display: flex;
+  margin-top: 5px;
+  margin-left: 2px;
 }
 
 .search-bar-container {
@@ -60,4 +67,12 @@
 
 .header__search-button:hover {
   background-color: #555;
+}
+
+.side-menu-container {
+  display: flex;
+  margin: auto 0px;
+}
+.icons-container {
+  margin: auto 10px;
 }

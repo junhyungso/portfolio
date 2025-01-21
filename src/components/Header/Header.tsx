@@ -7,6 +7,7 @@ import YoutubeIcon from '@mui/icons-material/Youtube';
 
 import { Link } from 'react-router-dom';
 
+import Resume from '../../assets/Resume_JunhyungSo.pdf';
 import './Header.css';
 
 const Header = ({
@@ -25,8 +26,8 @@ const Header = ({
         <MenuIcon className="menu-icon" onClick={handleMenuIconClicked} />
         <Link to="/">
           <div className="logo">
-            <YoutubeIcon style={{ fill: 'red' }} />
-            <div>JunTube</div>
+            <YoutubeIcon fontSize="large" style={{ fill: 'red' }} />
+            <div className="logo-text">JunTube</div>
           </div>
         </Link>
         {/* <Link to="/">Home</Link> */}
@@ -41,16 +42,22 @@ const Header = ({
           <SearchIcon />
         </button>
       </div>
-      <div>
-        <Link to="/projects">
-          <button>Create</button>
-        </Link>
-        <Link to="/about">
-          <AppsIcon />
-        </Link>
-        <Link to="/contact">
-          <AccountIcon />
-        </Link>
+      <div className="side-menu-container">
+        <button onClick={() => window.open(Resume)} className="resume-button">
+          Resume
+        </button>
+        <div className="icons-container">
+          <Link to="/about">
+            <AppsIcon
+              onClick={() => window.open('https://github.com/junhyungso/')}
+              className="link-icon"
+              fontSize="large"
+            />
+          </Link>
+          <Link to="/contact">
+            <AccountIcon fontSize="large" />
+          </Link>
+        </div>
       </div>
     </div>
   );

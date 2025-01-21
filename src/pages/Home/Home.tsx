@@ -1,4 +1,3 @@
-// src/pages/Home.tsx
 import GithubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
