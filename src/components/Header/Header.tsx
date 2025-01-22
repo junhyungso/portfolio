@@ -47,7 +47,7 @@ const Header = ({
           Resume
         </button>
         <div className="icons-container">
-          <Link to="/about">
+          <Link to="/myjourney">
             <AppsIcon
               onClick={() => window.open('https://github.com/junhyungso/')}
               className="link-icon"

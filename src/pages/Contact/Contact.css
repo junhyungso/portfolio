@@ -26,6 +26,7 @@
 .intro {
   width: 800px;
   margin: 20px 40px;
+  text-align: center;
 }
 
 .project-list {
@@ -34,10 +35,6 @@
 
 .project {
   border-right: 1px solid white;
-}
-
-.link-icon-container {
-  display: flex;
 }
 .resume-button {
   margin: 0px 10px 0px 0px;

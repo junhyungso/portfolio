@@ -1,4 +1,3 @@
-import GithubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 import Me from '../../assets/me.jpeg';
@@ -20,20 +19,15 @@ const Contact = () => {
           </div>
           <div className="intro">
             <h1>Contact</h1>
-            <div className="link-icon-container">
-              <LinkedInIcon
-                onClick={() =>
-                  window.open('https://www.linkedin.com/in/junhyungso/')
-                }
-                className="link-icon"
-                fontSize="large"
-              />
-              <GithubIcon
-                onClick={() => window.open('https://github.com/junhyungso/')}
-                className="link-icon"
-                fontSize="large"
-              />
-            </div>
+            <p>Feel free to reach out to me any time about anything!</p>
+            <p>You can reach me at: junso5551@gmail.com</p>
+            <LinkedInIcon
+              onClick={() =>
+                window.open('https://www.linkedin.com/in/junhyungso/')
+              }
+              className="link-icon"
+              fontSize="large"
+            />
           </div>
         </div>
         {/* <hr />

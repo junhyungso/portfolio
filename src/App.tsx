@@ -5,9 +5,9 @@ import Footer from './components/Footer';
 import Header from './components/Header/Header';
 import LoadingBar from './components/LoadingBar/LoadingBar';
 import Sidebar from './components/SideBar/Sidebar';
-import About from './pages/About/MyJourney';
 import Contact from './pages/Contact/Contact';
 import Home from './pages/Home/Home';
+import MyJourney from './pages/MyJourney/MyJourney';
 import Projects from './pages/Projects';
 
 const App = () => {
@@ -39,7 +39,7 @@ const App = () => {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/projects" element={<Projects />} />
-              <Route path="/about" element={<About />} />
+              <Route path="/myjourney" element={<MyJourney />} />
               <Route path="/contact" element={<Contact />} />
             </Routes>
           </main>

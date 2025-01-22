@@ -15,7 +15,7 @@ const Sidebar = ({ isSideMenuMinimized }: { isSideMenuMinimized: boolean }) => {
             <div className="sidebar__menu__item__text">Home</div>
           )}
         </Link>
-        <Link to="/about" className="sidebar__menu__item">
+        <Link to="/myjourney" className="sidebar__menu__item">
           <MovingIcon className="sidebar__menu__item__icon" />
           {!isSideMenuMinimized && (
             <div className="sidebar__menu__item__text">My Journey</div>

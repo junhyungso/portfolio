@@ -1,0 +1,22 @@
+.journey-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0 1rem 1rem 1rem;
+}
+
+.timeline-container {
+  border: 1px solid white;
+  margin: 5px 0px;
+  width: 700px;
+  border-radius: 15px;
+}
+
+.timeline-content {
+  margin: 10px;
+}
+
+.timeline-content-odd {
+  margin: 10px;
+}
