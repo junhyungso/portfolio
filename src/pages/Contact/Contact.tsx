@@ -8,6 +8,7 @@ const Contact = () => {
     <>
       <div className="main-content">
         <div className="contact-content">
+          <h1>Contact</h1>
           <div className="profile-container">
             <img
               src={Me}
@@ -17,10 +18,11 @@ const Contact = () => {
               className="profile-image"
             />
           </div>
-          <div className="intro">
-            <h1>Contact</h1>
+          <div className="contact-intro">
             <p>Feel free to reach out to me any time about anything!</p>
-            <p>You can reach me at: junso5551@gmail.com</p>
+            <p>
+              You can reach me at: <b>junso5551@gmail.com</b>
+            </p>
             <LinkedInIcon
               onClick={() =>
                 window.open('https://www.linkedin.com/in/junhyungso/')
