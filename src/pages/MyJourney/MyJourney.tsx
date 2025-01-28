@@ -1,7 +1,14 @@
 import './MyJourney.css';
 
+type Milestone = {
+  year: string;
+  title: string;
+  description: string;
+  icon: string;
+};
+
 const MyJourney = () => {
-  const milestones = [
+  const milestones: Milestone[] = [
     {
       year: 'December 2021 - October 2023',
       title: 'Acorns - Software Engineer',
