@@ -59,15 +59,15 @@ const Home = () => {
             </div>
           </div>
         </div>
-        {/* <hr />
+        <hr />
         <div>
           <h1>Featured Projects</h1>
           <div className="project-list">
-            <div className="project">A</div>
+            <div className="project">Adopt a Dog</div>
             <div className="project">B</div>
             <div className="project-last">C</div>
           </div>
-        </div> */}
+        </div>
       </div>
     </>
   );
