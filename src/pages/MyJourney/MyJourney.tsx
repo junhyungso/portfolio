@@ -1,4 +1,4 @@
-import './MyJourney.css';
+import styles from './MyJourney.module.css';
 
 type Milestone = {
   year: string;
@@ -33,14 +33,16 @@ const MyJourney = () => {
   ];
 
   return (
-    <div className="journey-page">
+    <div className={styles.journeyPage}>
       <h1>My Journey So Far</h1>
 
       {milestones.map((milestone, index) => (
-        <div key={index} className="timeline-container">
+        <div key={index} className={styles.timelineContainer}>
           <div
             className={
-              index % 2 !== 0 ? 'timeline-content' : 'timeline-content-odd'
+              index % 2 !== 0
+                ? styles.timelineContent
+                : styles.timelineContentOdd
             }
           >
             <h2>
