@@ -4,24 +4,24 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import Me from '../../assets/me.jpeg';
 import Resume from '../../assets/Resume_JunhyungSo.pdf';
 import Banner from '../../components/Banner/Banner';
-import './Home.css';
+import styles from './Home.module.css';
 
 const Home = () => {
   return (
     <>
-      <div className="main-content">
+      <div className={styles.mainContent}>
         <Banner />
-        <div className="about-content">
-          <div className="profile-container">
+        <div className={styles.aboutContent}>
+          <div className={styles.profileContainer}>
             <img
               src={Me}
               alt="me"
               width="200px"
               height="200px"
-              className="profile-image"
+              className={styles.profileImage}
             />
           </div>
-          <div className="intro">
+          <div className={styles.intro}>
             <h1>About me</h1>
             <p>
               Hi, I'm Junhyung So, a Frontend Software Engineer with great
@@ -37,10 +37,10 @@ const Home = () => {
               This portfolio website is inspired by my favorite website Youtube
               (Dark Mode).
             </p>
-            <div className="link-icon-container">
+            <div className={styles.linkIconContainer}>
               <button
                 onClick={() => window.open(Resume)}
-                className="resume-button"
+                className={styles.resumeButton}
               >
                 Resume
               </button>
@@ -48,24 +48,23 @@ const Home = () => {
                 onClick={() =>
                   window.open('https://www.linkedin.com/in/junhyungso/')
                 }
-                className="link-icon"
+                className={styles.linkIcon}
                 fontSize="large"
               />
               <GithubIcon
                 onClick={() => window.open('https://github.com/junhyungso/')}
-                className="link-icon"
+                className={styles.linkIcon}
                 fontSize="large"
               />
             </div>
           </div>
         </div>
-        <hr />
         <div>
           <h1>Featured Projects</h1>
-          <div className="project-list">
-            <div className="project">Adopt a Dog</div>
-            <div className="project">B</div>
-            <div className="project-last">C</div>
+          <div className={styles.projectList}>
+            <div className={styles.project}>Adopt a Dog</div>
+            <div className={styles.project}>B</div>
+            <div className={styles.projectLast}>C</div>
           </div>
         </div>
       </div>

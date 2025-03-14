@@ -1,4 +1,4 @@
-.minimized-sidebar {
+.minimizedSidebar {
   width: 50px;
   background-color: #000;
   color: white;
@@ -6,7 +6,7 @@
   min-height: calc(100vh - 144px);
 }
 
-.sidebar {
+.sideBar {
   min-width: 216px;
   background-color: #000;
   color: white;
@@ -16,14 +16,14 @@
   border-right: 0.5px solid rgb(162, 162, 162, 0.5);
 }
 
-.sidebar__menu {
+.sideBarMenu {
   display: flex;
   flex-direction: column;
   padding: 0;
   margin: 0;
 }
 
-.sidebar__menu__item {
+.sidebarMenuItem {
   margin: 10px 10px;
   cursor: pointer;
   font-size: 16px;
@@ -33,13 +33,13 @@
   border-radius: 10px;
 }
 
-.sidebar__menu__item:hover {
+.sidebarMenuItem:hover {
   background-color: #717171;
 }
-.sidebar__menu__item__icon {
+.sidebarMenuItemIcon {
   margin-right: 20px;
 }
 
-.sidebar__menu__item__text {
+.sidebarMenuItemText {
   font-size: 18px;
 }

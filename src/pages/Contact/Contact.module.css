@@ -2,47 +2,44 @@
   display: flex;
 }
 
-.main-content {
+.mainContent {
   width: 100%;
   margin: 0 1rem 1rem 1rem;
 }
 
-.about-content {
+.contactContent {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   margin: 0px 20px;
 }
 
-.profile-container {
-  margin: 10px 30px;
+.profileContainer {
+  margin: 10px 0px;
 }
 
-.profile-image {
+.profileImage {
   border-radius: 50%;
 }
 
-.intro {
+.contactIntro {
   width: 800px;
   margin: 20px 40px;
+  text-align: center;
 }
 
-.project-list {
+.projectList {
   display: flex;
 }
 
 .project {
   border-right: 1px solid white;
 }
-
-.link-icon-container {
-  display: flex;
-}
-.resume-button {
+.resumeButton {
   margin: 0px 10px 0px 0px;
 }
-.link-icon {
+.linkIcon {
   margin: auto 10px;
   cursor: pointer;
 }

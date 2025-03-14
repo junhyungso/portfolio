@@ -1,20 +1,20 @@
-.navbar {
+.navBar {
   display: flex;
   justify-content: space-between;
   background: #000;
   color: white;
 }
 
-.menu-logo {
+.menuLogo {
   display: flex;
 }
-.menu-icon {
+.menuIcon {
   border-radius: 50px;
   padding: 5px;
   margin: 18px 10px 0px 35px;
 }
 
-.menu-icon:hover {
+.menuIcon:hover {
   background-color: #444;
 }
 
@@ -28,13 +28,13 @@
   background-color: #000;
 }
 
-.logo-text {
+.logoText {
   display: flex;
   margin-top: 5px;
   margin-left: 2px;
 }
 
-.search-bar-container {
+.searchBarContainer {
   display: flex;
   flex: 1;
   max-width: 750px;
@@ -42,7 +42,7 @@
   height: 56px;
 }
 
-.search-bar {
+.searchBar {
   width: 100%;
   padding: 7px;
   border: 1px solid #444;
@@ -53,11 +53,11 @@
   height: 40px;
 }
 
-.search-bar::placeholder {
+.searchBar::placeholder {
   color: #aaa;
 }
 
-.header__search-button {
+.headerSearchButton {
   background-color: #444;
   border: none;
   border-radius: 0 50px 50px 0;
@@ -65,14 +65,14 @@
   cursor: pointer;
 }
 
-.header__search-button:hover {
+.headerSearchButton:hover {
   background-color: #555;
 }
 
-.side-menu-container {
+.sideMenuContainer {
   display: flex;
   margin: auto 0px;
 }
-.icons-container {
+.iconsContainer {
   margin: auto 10px;
 }

@@ -3,34 +3,36 @@ import ContactIcon from '@mui/icons-material/Contacts';
 import HomeIcon from '@mui/icons-material/Home';
 import MovingIcon from '@mui/icons-material/Moving';
 import { Link } from 'react-router-dom';
-import './Sidebar.css';
+import styles from './Sidebar.module.css';
 
 const Sidebar = ({ isSideMenuMinimized }: { isSideMenuMinimized: boolean }) => {
   return (
-    <aside className={isSideMenuMinimized ? 'minimized-sidebar' : 'sidebar'}>
-      <ul className="sidebar__menu">
-        <Link to="/" className="sidebar__menu__item">
-          <HomeIcon className="sidebar__menu__item__icon" />
+    <aside
+      className={isSideMenuMinimized ? styles.minimizedSideBar : styles.sideBar}
+    >
+      <ul className={styles.sideBarMenu}>
+        <Link to="/" className={styles.sidebarMenuItem}>
+          <HomeIcon className={styles.sidebarMenuItemIcon} />
           {!isSideMenuMinimized && (
-            <div className="sidebar__menu__item__text">Home</div>
+            <div className={styles.sidebarMenuItemText}>Home</div>
           )}
         </Link>
-        <Link to="/myjourney" className="sidebar__menu__item">
-          <MovingIcon className="sidebar__menu__item__icon" />
+        <Link to="/myjourney" className={styles.sidebarMenuItem}>
+          <MovingIcon className={styles.sidebarMenuItemIcon} />
           {!isSideMenuMinimized && (
-            <div className="sidebar__menu__item__text">My Journey</div>
+            <div className={styles.sidebarMenuItemText}>My Journey</div>
           )}
         </Link>
-        <Link to="/projects" className="sidebar__menu__item">
-          <CodeIcon className="sidebar__menu__item__icon" />
+        <Link to="/projects" className={styles.sidebarMenuItem}>
+          <CodeIcon className={styles.sidebarMenuItemIcon} />
           {!isSideMenuMinimized && (
-            <div className="sidebar__menu__item__text">Projects</div>
+            <div className={styles.sidebarMenuItemText}>Projects</div>
           )}
         </Link>
-        <Link to="/contact" className="sidebar__menu__item">
-          <ContactIcon className="sidebar__menu__item__icon" />
+        <Link to="/contact" className={styles.sidebarMenuItem}>
+          <ContactIcon className={styles.sidebarMenuItemIcon} />
           {!isSideMenuMinimized && (
-            <div className="sidebar__menu__item__text">Contact</div>
+            <div className={styles.sidebarMenuItemText}>Contact</div>
           )}
         </Link>
       </ul>
