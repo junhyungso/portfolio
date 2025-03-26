@@ -10,7 +10,7 @@ type Milestone = {
 const MyJourney = () => {
   const milestones: Milestone[] = [
     {
-      year: 'December 2021 - October 2023',
+      year: 'December 2021 - October 2024',
       title: 'Acorns - Software Engineer',
       description:
         'Worked as a Frontend Web Developer for the Investment Product Team and Bank Linking Team to build and release multiple user-facing projects, specifically the Custom Portfolio feature and Bank Linking Verification feature. Other responsibilities included: Improving UI/UX of existing features for Acorns Early - investment accounts for kids, Identifying and resolving critical customer-facing bugs impacting investment experience, Improving site performance and reliability through code refactoring and unit testing.',
