@@ -62,7 +62,7 @@ const Home = () => {
         <div>
           <h1>Featured Projects</h1>
           <div className={styles.projectList}>
-            <div className={styles.project}>Adopt a Dog</div>
+            <div className={styles.project}>Adopt a Dog!</div>
             <div className={styles.project}>B</div>
             <div className={styles.projectLast}>C</div>
           </div>
