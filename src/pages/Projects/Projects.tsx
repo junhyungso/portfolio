@@ -1,14 +1,15 @@
 // src/pages/Projects.tsx
 import React from 'react';
-import ProjectCard from '../components/ProjectCard';
+import ProjectCard from '../../components/ProjectCard';
 
 const Projects: React.FC = () => {
   const projectList = [
     {
-      title: 'Project 1',
-      description: 'Description here',
+      title: 'Adopt a Dog',
+      description:
+        'A web application that allows users to adopt dogs from a shelter.',
       image: '/path/to/image',
-      link: '#',
+      link: '/projects/adopt-a-dog',
     },
     {
       title: 'Project 2',

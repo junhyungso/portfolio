@@ -8,7 +8,7 @@ import Sidebar from './components/SideBar/Sidebar';
 import Contact from './pages/Contact/Contact';
 import Home from './pages/Home/Home';
 import MyJourney from './pages/MyJourney/MyJourney';
-import Projects from './pages/Projects';
+import Projects from './pages/Projects/Projects';
 
 const App = () => {
   const [isLoading, setIsLoading] = useState(false);
