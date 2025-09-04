@@ -12,10 +12,11 @@ const Projects: React.FC = () => {
       link: '/projects/adopt-a-dog',
     },
     {
-      title: 'Project 2',
-      description: 'Description here',
+      title: 'Rosary Prayer',
+      description:
+        'A web application that allows users to say the rosary prayer without a rosary in hand',
       image: '/path/to/image',
-      link: '#',
+      link: '/projects/rosary',
     },
   ];
 
