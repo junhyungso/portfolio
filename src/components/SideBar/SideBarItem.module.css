@@ -1,0 +1,34 @@
+.sidebarMenuItem {
+  margin: 10px 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: color 0.3s;
+  display: flex;
+  padding: 10px;
+  border-radius: 10px;
+  color: var(--text-color);
+}
+
+.sidebarMenuItem:hover {
+  background-color: #717171;
+}
+
+@media (max-width: 768px) {
+  .sidebarMenuItem {
+    margin: 10px 0p;
+  }
+}
+
+.sidebarMenuItemContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sidebarMenuItemIcon {
+  margin-right: 20px;
+}
+
+.sidebarMenuItemText {
+  font-size: 18px;
+}

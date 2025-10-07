@@ -1,18 +1,30 @@
 .container {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .mainContent {
   width: 100%;
   margin: 0 1rem 1rem 1rem;
 }
+@media (max-width: 768px) {
+  .mainContent {
+    margin: 0;
+  }
+}
 
 .aboutContent {
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: center;
   margin: 0px 20px;
+}
+
+@media (max-width: 768px) {
+  .aboutContent {
+    flex-direction: column;
+  }
 }
 
 .aboutTitle {
@@ -31,6 +43,13 @@
 .intro {
   width: 800px;
   margin: 20px 40px;
+}
+
+@media (max-width: 768px) {
+  .intro {
+    width: 100%;
+    margin: 0;
+  }
 }
 
 .projectList {

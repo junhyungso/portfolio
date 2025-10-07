@@ -23,7 +23,7 @@ const App = () => {
 
   useEffect(() => {
     setIsSideMenuMinimized(isMobile);
-    return () => {};
+    return;
   }, [isMobile]);
 
   return (
@@ -44,7 +44,11 @@ const App = () => {
               setIsSideMenuMinimized={setIsSideMenuMinimized}
             />
             <main>
-              <Sidebar isSideMenuMinimized={isSideMenuMinimized} />
+              <Sidebar
+                isSideMenuMinimized={isSideMenuMinimized}
+                isMobile={isMobile}
+                setIsSideMenuMinimized={setIsSideMenuMinimized}
+              />
               <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/projects" element={<Projects />} />

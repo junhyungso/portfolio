@@ -9,6 +9,12 @@
   padding: 0;
 }
 
+@media (max-width: 768px) {
+  .projects {
+    margin: 2rem auto;
+  }
+}
+
 .title {
   text-align: center;
   font-size: 2.5rem;

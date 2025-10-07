@@ -12,6 +12,7 @@ import { FeaturedProjectsData } from '../../lib/FeaturedProjectsData';
 import SearchBar from '../SearchBar/SearchBar';
 import styles from './NavBar.module.css';
 
+import { useMediaQuery } from '@custom-react-hooks/use-media-query';
 import DarkModeIcon from '@mui/icons-material/DarkMode';
 import LightModeIcon from '@mui/icons-material/LightMode';
 import { useTheme } from '../../context/ThemeContext';
@@ -28,6 +29,7 @@ const NavBar = ({
   };
   const [searchQuery, setSearchQuery] = useState('');
   const { theme, toggleTheme } = useTheme();
+  const isMobile = useMediaQuery('(max-width: 768px)');
 
   return (
     <div className={styles.navBar}>
@@ -40,11 +42,13 @@ const NavBar = ({
           </div>
         </Link>
       </div>
-      <SearchBar
-        searchQuery={searchQuery}
-        setSearchQuery={setSearchQuery}
-        projects={FeaturedProjectsData}
-      />
+      {!isMobile && (
+        <SearchBar
+          searchQuery={searchQuery}
+          setSearchQuery={setSearchQuery}
+          projects={FeaturedProjectsData}
+        />
+      )}
       <div className={styles.sideMenuContainer}>
         <button onClick={toggleTheme} className={styles.themeButton}>
           {theme === 'light' ? <DarkModeIcon /> : <LightModeIcon />}
@@ -55,18 +59,20 @@ const NavBar = ({
         >
           Resume
         </button>
-        <div className={styles.iconsContainer}>
-          <Link to="/myjourney">
-            <AppsIcon
-              onClick={() => window.open('https://github.com/junhyungso/')}
-              className={styles.linkIcon}
-              fontSize="large"
-            />
-          </Link>
-          <Link to="/contact">
-            <AccountIcon fontSize="large" />
-          </Link>
-        </div>
+        {!isMobile && (
+          <div className={styles.iconsContainer}>
+            <Link to="/myjourney">
+              <AppsIcon
+                onClick={() => window.open('https://github.com/junhyungso/')}
+                className={styles.linkIcon}
+                fontSize="large"
+              />
+            </Link>
+            <Link to="/contact">
+              <AccountIcon fontSize="large" />
+            </Link>
+          </div>
+        )}
       </div>
     </div>
   );

@@ -5,7 +5,15 @@ import MovingIcon from '@mui/icons-material/Moving';
 import styles from './SideBar.module.css';
 import SideBarItem from './SideBarItem';
 
-const Sidebar = ({ isSideMenuMinimized }: { isSideMenuMinimized: boolean }) => {
+const Sidebar = ({
+  isSideMenuMinimized,
+  isMobile,
+  setIsSideMenuMinimized,
+}: {
+  isSideMenuMinimized: boolean;
+  isMobile: boolean;
+  setIsSideMenuMinimized: (isSideMenuMinimized: boolean) => void;
+}) => {
   const sideBarMenuItems = [
     { name: 'Home', icon: <HomeIcon />, path: '/' },
     { name: 'My Journey', icon: <MovingIcon />, path: '/myjourney' },
@@ -17,15 +25,21 @@ const Sidebar = ({ isSideMenuMinimized }: { isSideMenuMinimized: boolean }) => {
     <aside
       className={isSideMenuMinimized ? styles.minimizedSideBar : styles.sideBar}
     >
-      <ul className={styles.sideBarMenu}>
-        {sideBarMenuItems.map((item) => (
-          <SideBarItem
-            item={item}
-            isSideMenuMinimized={isSideMenuMinimized}
-            key={item.name}
-          />
-        ))}
-      </ul>
+      {isMobile && isSideMenuMinimized ? (
+        ''
+      ) : (
+        <ul className={styles.sideBarMenu}>
+          {sideBarMenuItems.map((item) => (
+            <SideBarItem
+              item={item}
+              isSideMenuMinimized={isSideMenuMinimized}
+              key={item.name}
+              isMobile={isMobile}
+              setIsSideMenuMinimized={setIsSideMenuMinimized}
+            />
+          ))}
+        </ul>
+      )}
     </aside>
   );
 };
