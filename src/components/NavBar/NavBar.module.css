@@ -15,17 +15,18 @@
 }
 
 .menuIcon:hover {
-  background-color: var(--bg-color);
+  background-color: var(--second-bg-color);
 }
 
 .logo {
   display: flex;
   margin-top: 20px;
   margin-left: 10px;
+  padding: 0px 2px;
 }
 
 .logo:hover {
-  background-color: #000;
+  background-color: var(--second-bg-color);
 }
 
 .logoText {
@@ -44,6 +45,9 @@
   margin: auto 10px;
 }
 
+.linkIcon {
+  margin: 0px 10px;
+}
 .themeButton {
   background: none;
   border: none;
@@ -51,7 +55,6 @@
   cursor: pointer;
   font-size: 1.5rem;
   transition: transform 0.2s ease;
-  margin: 0px 10px;
 }
 
 .themeButton:hover {
