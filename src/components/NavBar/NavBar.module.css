@@ -34,41 +34,6 @@
   margin-left: 2px;
 }
 
-.searchBarContainer {
-  display: flex;
-  flex: 1;
-  max-width: 750px;
-  margin: 10px 0px;
-  height: 56px;
-}
-
-.searchBar {
-  width: 100%;
-  padding: 7px;
-  border: 1px solid #444;
-  border-radius: 50px 0px 0px 50px;
-  color: white;
-  outline: none;
-  background-color: #121212;
-  height: 40px;
-}
-
-.searchBar::placeholder {
-  color: #aaa;
-}
-
-.headerSearchButton {
-  background-color: #444;
-  border: none;
-  border-radius: 0 50px 50px 0;
-  color: white;
-  cursor: pointer;
-}
-
-.headerSearchButton:hover {
-  background-color: #555;
-}
-
 .sideMenuContainer {
   display: flex;
   margin: auto 0px;

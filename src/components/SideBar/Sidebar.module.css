@@ -1,7 +1,7 @@
 .minimizedSidebar {
   width: 50px;
   background-color: #000;
-  color: white;
+  color: rgba(255, 255, 255, 0.87);
   padding: 20px;
   min-height: calc(100vh - 144px);
 }
@@ -9,7 +9,7 @@
 .sideBar {
   min-width: 216px;
   background-color: #000;
-  color: white;
+  color: rgba(255, 255, 255, 0.87);
   padding: 20px;
   min-height: calc(100vh - 144px);
   overflow-y: auto;
@@ -31,6 +31,7 @@
   display: flex;
   padding: 10px;
   border-radius: 10px;
+  color: rgba(255, 255, 255, 0.87);
 }
 
 .sidebarMenuItem:hover {

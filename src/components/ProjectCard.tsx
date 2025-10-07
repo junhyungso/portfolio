@@ -5,8 +5,8 @@ import styled from 'styled-components';
 type ProjectProps = {
   title: string;
   description: string;
-  image: string;
-  link: string;
+  image?: string;
+  link?: string;
 };
 
 const Card = styled.div`

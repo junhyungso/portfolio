@@ -2,15 +2,17 @@
 import AccountIcon from '@mui/icons-material/AccountCircle';
 import AppsIcon from '@mui/icons-material/Apps';
 import MenuIcon from '@mui/icons-material/Menu';
-import SearchIcon from '@mui/icons-material/Search';
 import YoutubeIcon from '@mui/icons-material/Youtube';
 
 import { Link } from 'react-router-dom';
 
+import { useState } from 'react';
 import Resume from '../../assets/Resume_JunhyungSo.pdf';
-import styles from './Header.module.css';
+import { FeaturedProjectsData } from '../../lib/FeaturedProjectsData';
+import SearchBar from '../SearchBar/SearchBar';
+import styles from './NavBar.module.css';
 
-const Header = ({
+const NavBar = ({
   isSideMenuMinimized,
   setIsSideMenuMinimized,
 }: {
@@ -20,6 +22,8 @@ const Header = ({
   const handleMenuIconClicked = () => {
     setIsSideMenuMinimized(!isSideMenuMinimized);
   };
+  const [searchQuery, setSearchQuery] = useState('');
+
   return (
     <div className={styles.navBar}>
       <div className={styles.menuLogo}>
@@ -30,18 +34,13 @@ const Header = ({
             <div className={styles.logoText}>JunTube</div>
           </div>
         </Link>
-        {/* <Link to="/">Home</Link> */}
       </div>
-      <div className={styles.searchBarContainer}>
-        <input
-          type="text"
-          className={styles.searchBar}
-          placeholder="Search projects..."
-        />
-        <button className={styles.headerSearchButton}>
-          <SearchIcon />
-        </button>
-      </div>
+      <SearchBar
+        searchQuery={searchQuery}
+        setSearchQuery={setSearchQuery}
+        projects={FeaturedProjectsData}
+        onSelect={(p) => console.log('Selected project:', p)}
+      />
       <div className={styles.sideMenuContainer}>
         <button
           onClick={() => window.open(Resume)}
@@ -66,4 +65,4 @@ const Header = ({
   );
 };
 
-export default Header;
+export default NavBar;

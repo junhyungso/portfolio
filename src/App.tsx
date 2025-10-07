@@ -2,9 +2,9 @@
 import { useState } from 'react';
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import Footer from './components/Footer';
-import Header from './components/Header/Header';
 import LoadingBar from './components/LoadingBar/LoadingBar';
-import Sidebar from './components/SideBar/Sidebar';
+import NavBar from './components/NavBar/NavBar';
+import Sidebar from './components/SideBar/SideBar';
 import Contact from './pages/Contact/Contact';
 import Home from './pages/Home/Home';
 import MyJourney from './pages/MyJourney/MyJourney';
@@ -30,7 +30,7 @@ const App = () => {
       )}
       {!isLoading && (
         <>
-          <Header
+          <NavBar
             isSideMenuMinimized={isSideMenuMinimized}
             setIsSideMenuMinimized={setIsSideMenuMinimized}
           />

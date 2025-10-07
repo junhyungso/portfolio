@@ -23,7 +23,7 @@ const LoadingBar = ({ duration, onComplete }: Props) => {
       });
     }, interval);
 
-    return () => clearInterval(timer); // Cleanup interval on unmount
+    return () => clearInterval(timer);
   }, [duration, onComplete]);
 
   return (

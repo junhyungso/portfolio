@@ -1,0 +1,62 @@
+.searchBarContainer {
+  display: flex;
+  flex: 1;
+  max-width: 750px;
+  margin: 10px 0px;
+  height: 56px;
+  position: relative; /* ensures absolute children position correctly */
+}
+
+.searchBar {
+  width: 100%;
+  padding: 7px;
+  border: 1px solid #444;
+  border-radius: 50px 0px 0px 50px;
+  color: white;
+  outline: none;
+  background-color: #121212;
+  height: 40px;
+}
+
+.searchBar::placeholder {
+  color: #aaa;
+}
+
+.headerSearchButton {
+  background-color: #444;
+  border: none;
+  border-radius: 0 50px 50px 0;
+  color: white;
+  cursor: pointer;
+}
+
+.headerSearchButton:hover {
+  background-color: #555;
+}
+
+.suggestionsList {
+  position: absolute;
+  top: 110%; /* just below the search bar */
+  left: 0;
+  width: 100%;
+  background-color: #181818;
+  border: 1px solid #333;
+  border-radius: 8px;
+  list-style: none;
+  margin: 0;
+  padding: 6px 0;
+  z-index: 9999; /* make sure it’s above navbar or other containers */
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.suggestionItem {
+  padding: 8px 12px;
+  color: white;
+  cursor: pointer;
+}
+
+.suggestionItem:hover,
+.highlighted {
+  background-color: #272727;
+}

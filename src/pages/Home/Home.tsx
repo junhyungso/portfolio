@@ -4,6 +4,8 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import Me from '../../assets/me.jpeg';
 import Resume from '../../assets/Resume_JunhyungSo.pdf';
 import Banner from '../../components/Banner/Banner';
+import FeaturedProjects from '../../components/FeaturedProjects/FeaturedProjects';
+import { FeaturedProjectsData } from '../../lib/FeaturedProjectsData';
 import styles from './Home.module.css';
 
 const Home = () => {
@@ -22,7 +24,7 @@ const Home = () => {
             />
           </div>
           <div className={styles.intro}>
-            <h1>About me</h1>
+            <h1 className={styles.aboutTitle}>About me</h1>
             <p>
               Hi, I'm Junhyung So, a Frontend Software Engineer with great
               passion for creating intuitive and user-friendly interfaces. With
@@ -59,14 +61,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div>
-          <h1>Featured Projects</h1>
-          <div className={styles.projectList}>
-            <div className={styles.project}>Adopt a Dog!</div>
-            <div className={styles.project}>B</div>
-            <div className={styles.projectLast}>C</div>
-          </div>
-        </div>
+        <FeaturedProjects projects={FeaturedProjectsData} />
       </div>
     </>
   );
