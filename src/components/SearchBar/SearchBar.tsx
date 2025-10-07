@@ -1,5 +1,6 @@
 import SearchIcon from '@mui/icons-material/Search';
 import React, { useEffect, useRef, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { ProjectData } from '../../types/types';
 import styles from './SearchBar.module.css';
 
@@ -7,18 +8,17 @@ type SearchBarProps = {
   searchQuery: string;
   setSearchQuery: (value: string) => void;
   projects: ProjectData[];
-  onSelect?: (project: ProjectData) => void;
 };
 
 const SearchBar: React.FC<SearchBarProps> = ({
   searchQuery,
   setSearchQuery,
   projects,
-  onSelect,
 }) => {
   const [showSuggestions, setShowSuggestions] = useState(false);
   const [highlightedIndex, setHighlightedIndex] = useState(-1);
   const listRef = useRef<HTMLUListElement>(null);
+  const navigate = useNavigate();
 
   const filteredProjects = projects.filter((p) =>
     p.title.toLowerCase().includes(searchQuery.toLowerCase())
@@ -34,11 +34,10 @@ const SearchBar: React.FC<SearchBarProps> = ({
   const handleSelect = (project: ProjectData) => {
     setSearchQuery(project.title);
     setShowSuggestions(false);
-    onSelect?.(project);
+    navigate(`${'project'}/${project.href || '/projects'}`);
   };
 
   const handleBlur = () => {
-    // delay closing so click event can register
     setTimeout(() => setShowSuggestions(false), 150);
   };
 
@@ -65,7 +64,6 @@ const SearchBar: React.FC<SearchBarProps> = ({
     }
   };
 
-  // Ensure highlighted suggestion stays visible if list scrolls
   useEffect(() => {
     if (
       listRef.current &&

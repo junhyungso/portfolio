@@ -28,16 +28,17 @@ const Home = () => {
             <p>
               Hi, I'm Junhyung So, a Frontend Software Engineer with great
               passion for creating intuitive and user-friendly interfaces. With
-              strong foundation in React and TypeScript, I specialize in
-              building responsive, accessible, and performant web applications.
-              I'm constantly driven to push boundaries, which includes learning
-              new technologies to expand my skillset.
+              strong foundation in <strong>React</strong> and{' '}
+              <strong>TypeScript</strong>, I specialize in building responsive,
+              accessible, and performant web applications. I'm constantly driven
+              to push boundaries, which includes learning new technologies to
+              expand my skillset.
             </p>
             <p>
               Outside of work, I enjoy my personal time watching movies, playing
               the piano, and participating in community volunteering services.
-              This portfolio website is inspired by my favorite website Youtube
-              (Dark Mode).
+              This portfolio website is inspired by my favorite website,
+              Youtube.
             </p>
             <div className={styles.linkIconContainer}>
               <button

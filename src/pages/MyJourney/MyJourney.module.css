@@ -1,26 +1,155 @@
 .journeyPage {
+  position: relative;
+  min-height: 100vh;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  padding: 4rem 1rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.journeyPage h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 4rem;
+  font-weight: 700;
+  display: inline-block;
+  padding-bottom: 0.5rem;
+}
+
+.header {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+/* Timeline */
+.timeline {
+  position: relative;
+  margin: 0 auto;
   width: 100%;
-  margin: 10px 1rem 1rem 1rem;
+  padding: 2rem 0;
 }
 
-.timelineContainer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid white;
-  margin: 5px 0px;
-  width: 700px;
-  border-radius: 15px;
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 3px;
+  background-color: var(--outline-color);
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
-.timelineContent {
-  margin: 10px;
+/* Timeline items */
+.timelineItem {
+  position: relative;
+  width: 50%;
+  padding: 1rem 2rem;
+  box-sizing: border-box;
+  z-index: 1;
 }
 
-.timelineContentOdd {
-  margin: 10px;
+.timelineItem::before {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #ff0000;
+  top: 20px;
+  box-shadow: 0 0 10px #ff0000;
+}
+
+/* Left side */
+.left {
+  left: 0;
+  text-align: right;
+}
+
+.left::before {
+  right: -8px;
+}
+
+/* Right side */
+.right {
+  left: 50%;
+}
+
+.right::before {
+  left: -8px;
+}
+
+.content {
+  background-color: var(--second-bg-color);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 10px rgba(255, 255, 255, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.content:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.08);
+}
+
+.content h2 {
+  color: var(--accent-color);
+  font-size: 1.1rem;
+  margin-bottom: 0.3rem;
+}
+
+.content h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.6rem;
+}
+
+.content p {
+  font-size: 0.95rem;
+  color: var(--text-color);
+  line-height: 1.5;
+}
+
+.scrollTop {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  background-color: var(--accent-color);
+  border: none;
+  color: var(--bg-color);
+  font-size: 1.5rem;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(255, 77, 77, 0.5);
+  z-index: 1000;
+}
+
+.scrollTop:hover {
+  background-color: #ff6666;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .timeline::after {
+    left: 8px;
+  }
+
+  .timelineItem {
+    width: 100%;
+    padding-left: 2.5rem;
+    text-align: left;
+  }
+
+  .timelineItem::before {
+    left: 0;
+  }
+
+  .left,
+  .right {
+    left: 0;
+  }
 }

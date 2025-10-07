@@ -1,8 +1,7 @@
 .navBar {
   display: flex;
   justify-content: space-between;
-  background: #000;
-  color: white;
+  background-color: var(--bg-color);
 }
 
 .menuLogo {
@@ -12,10 +11,11 @@
   border-radius: 50px;
   padding: 5px;
   margin: 18px 10px 0px 35px;
+  color: var(--text-color);
 }
 
 .menuIcon:hover {
-  background-color: #444;
+  background-color: var(--bg-color);
 }
 
 .logo {
@@ -32,6 +32,8 @@
   display: flex;
   margin-top: 5px;
   margin-left: 2px;
+  color: var(--text-color);
+  font-weight: bold;
 }
 
 .sideMenuContainer {
@@ -40,4 +42,18 @@
 }
 .iconsContainer {
   margin: auto 10px;
+}
+
+.themeButton {
+  background: none;
+  border: none;
+  color: var(--text-color);
+  cursor: pointer;
+  font-size: 1.5rem;
+  transition: transform 0.2s ease;
+  margin: 0px 10px;
+}
+
+.themeButton:hover {
+  transform: scale(1.2);
 }

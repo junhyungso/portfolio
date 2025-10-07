@@ -12,6 +12,10 @@ import { FeaturedProjectsData } from '../../lib/FeaturedProjectsData';
 import SearchBar from '../SearchBar/SearchBar';
 import styles from './NavBar.module.css';
 
+import DarkModeIcon from '@mui/icons-material/DarkMode';
+import LightModeIcon from '@mui/icons-material/LightMode';
+import { useTheme } from '../../context/ThemeContext';
+
 const NavBar = ({
   isSideMenuMinimized,
   setIsSideMenuMinimized,
@@ -23,6 +27,7 @@ const NavBar = ({
     setIsSideMenuMinimized(!isSideMenuMinimized);
   };
   const [searchQuery, setSearchQuery] = useState('');
+  const { theme, toggleTheme } = useTheme();
 
   return (
     <div className={styles.navBar}>
@@ -39,9 +44,11 @@ const NavBar = ({
         searchQuery={searchQuery}
         setSearchQuery={setSearchQuery}
         projects={FeaturedProjectsData}
-        onSelect={(p) => console.log('Selected project:', p)}
       />
       <div className={styles.sideMenuContainer}>
+        <button onClick={toggleTheme} className={styles.themeButton}>
+          {theme === 'light' ? <DarkModeIcon /> : <LightModeIcon />}
+        </button>
         <button
           onClick={() => window.open(Resume)}
           className={styles.resumeButton}

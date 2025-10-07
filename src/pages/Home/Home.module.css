@@ -50,4 +50,5 @@
 .linkIcon {
   margin: auto 10px;
   cursor: pointer;
+  color: var(--text-color);
 }

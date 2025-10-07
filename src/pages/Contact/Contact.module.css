@@ -4,7 +4,6 @@
 
 .mainContent {
   width: 100%;
-  margin: 0 1rem 1rem 1rem;
 }
 
 .contactContent {
@@ -12,7 +11,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 0px 20px;
+  margin: 5rem 0;
 }
 
 .profileContainer {
@@ -40,6 +39,6 @@
   margin: 0px 10px 0px 0px;
 }
 .linkIcon {
-  margin: auto 10px;
+  margin: -10px 10px;
   cursor: pointer;
 }

@@ -5,9 +5,9 @@ import styled from 'styled-components';
 const FooterWrapper = styled.footer`
   text-align: center;
   padding: 1rem;
-  background-color: #000;
+  background-color: var(--bg-color);
   max-width: 100%;
-  color: white;
+  color: var(--text-color);
 `;
 
 const Footer: React.FC = () => (

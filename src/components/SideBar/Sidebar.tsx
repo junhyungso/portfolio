@@ -19,7 +19,11 @@ const Sidebar = ({ isSideMenuMinimized }: { isSideMenuMinimized: boolean }) => {
     >
       <ul className={styles.sideBarMenu}>
         {sideBarMenuItems.map((item) => (
-          <SideBarItem item={item} isSideMenuMinimized={isSideMenuMinimized} />
+          <SideBarItem
+            item={item}
+            isSideMenuMinimized={isSideMenuMinimized}
+            key={item.name}
+          />
         ))}
       </ul>
     </aside>

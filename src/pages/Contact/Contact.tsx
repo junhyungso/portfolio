@@ -23,24 +23,18 @@ const Contact = () => {
             <p>
               You can reach me at: <b>junso5551@gmail.com</b>
             </p>
-            <LinkedInIcon
-              onClick={() =>
-                window.open('https://www.linkedin.com/in/junhyungso/')
-              }
-              className={styles.linkIcon}
-              fontSize="large"
-            />
+            <p>
+              or through LinkedIn:
+              <LinkedInIcon
+                onClick={() =>
+                  window.open('https://www.linkedin.com/in/junhyungso/')
+                }
+                className={styles.linkIcon}
+                fontSize="large"
+              />
+            </p>
           </div>
         </div>
-        {/* <hr />
-        <div>
-          <h1>Featured Projects</h1>
-          <div className="project-list">
-            <div className="project">A</div>
-            <div className="project">B</div>
-            <div className="project-last">C</div>
-          </div>
-        </div> */}
       </div>
     </>
   );
