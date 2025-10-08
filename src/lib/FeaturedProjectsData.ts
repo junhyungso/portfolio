@@ -1,3 +1,8 @@
+import dogs from '../assets/dogs.png';
+import game2048 from '../assets/game2048.png';
+import kanban from '../assets/kanban.jpg';
+import portfolio from '../assets/portfolio.png';
+import rosary from '../assets/rosary.jpg';
 import { ProjectData } from '../types/types';
 
 export const FeaturedProjectsData: ProjectData[] = [
@@ -5,9 +10,8 @@ export const FeaturedProjectsData: ProjectData[] = [
     id: '1',
     title: 'Adopt a Dog',
     description:
-      'A web application that allows users to adopt dogs from a shelter. The app includes features such as dog profiles, adoption forms, and a user-friendly interface.',
-    link: 'https://adopt-a-dog.example.com',
-    images: ['https://example.com/images/adopt-a-dog.png'],
+      'A website that allows users to adopt dogs from a shelter. The app includes features such as dog profiles, adoption forms, and a user-friendly interfaces.',
+    images: [dogs],
     href: '/adopt-a-dog',
     github: 'https://github.com/junhyungso/adopt-dogs',
   },
@@ -15,39 +19,33 @@ export const FeaturedProjectsData: ProjectData[] = [
     id: '2',
     title: 'Rosary',
     description:
-      'A web application that helps users keep track of their rosary prayers. It includes features such as prayer reminders, a digital rosary counter, and a user-friendly interface.',
-    link: 'https://rosary.example.com',
-    images: ['https://example.com/images/adopt-a-dog.png'],
+      'A web application that helps users to pray the rosary without a physical rosary in hand. It includes prayers and mysteries so that users can keep track of their rosary progress.',
+    images: [rosary],
     href: '/rosary',
     github: 'https://github.com/junhyungso/rosary',
   },
   {
     id: '3',
     title: '2048 Game',
-    description:
-      'A web application that allows users to play the 2048 game. It includes features such as a game board, score tracking, and a user-friendly interface.',
-    link: 'https://2048.example.com',
-    images: ['https://example.com/images/adopt-a-dog.png'],
+    description: 'A 2048 game we all used to play when younger.',
+    images: [game2048],
     href: '/2048',
     github: 'https://github.com/junhyungso/2048game',
   },
   {
     id: '4',
     title: 'Kanban',
-    description:
-      'A web application that showcases my portfolio. It includes features such as project showcases, a blog, and a user-friendly interface.',
-    link: 'https://portfolio.example.com',
-    images: ['https://example.com/images/adopt-a-dog.png'],
+    description: 'A simple kanban board that allows me to organize my tasks.',
+    images: [kanban],
     href: '/portfolio',
     github: 'https://github.com/junhyungso/kanban',
   },
   {
     id: '4',
     title: 'This Portfolio',
-    description:
-      'A web application that showcases my portfolio. It includes features such as project showcases, a blog, and a user-friendly interface.',
-    link: 'https://portfolio.example.com',
-    images: ['https://example.com/images/adopt-a-dog.png'],
+    description: 'A web application that showcases my portfolio of projects.',
+    link: 'https://junhyungso.com',
+    images: [portfolio],
     href: '/portfolio',
     github: 'https://github.com/junhyungso/portfolio',
   },
