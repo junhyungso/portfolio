@@ -1,7 +1,7 @@
 .navBar {
   display: flex;
   justify-content: space-between;
-  background-color: var(--bg-color);
+  background-color: var(--second-bg-color);
 }
 
 .menuLogo {
@@ -12,10 +12,11 @@
   padding: 5px;
   margin: 18px 10px 0px 35px;
   color: var(--text-color);
+  cursor: pointer;
 }
 
 .menuIcon:hover {
-  background-color: var(--second-bg-color);
+  background-color: var(--outline-color);
 }
 
 .logo {
@@ -60,4 +61,8 @@
 
 .themeButton:hover {
   transform: scale(1.2);
+}
+.resumeButton {
+  margin: 10px 0px;
+  border: 1px solid var(--outline-color);
 }

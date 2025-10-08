@@ -12,11 +12,14 @@ const SideBarItem = ({
   isMobile: boolean;
   setIsSideMenuMinimized: (isSideMenuMinimized: boolean) => void;
 }) => {
+  const handleSideBarItemClick = () => {
+    if (isMobile) {
+      setIsSideMenuMinimized(true);
+    }
+  };
   return (
     <Link
-      onClick={() => {
-        setIsSideMenuMinimized(true);
-      }}
+      onClick={handleSideBarItemClick}
       to={item.path}
       className={styles.sidebarMenuItem}
       key={item.name}
@@ -27,7 +30,10 @@ const SideBarItem = ({
       {isSideMenuMinimized && isMobile && ''}
 
       {isSideMenuMinimized && !isMobile && (
-        <div className={styles.sidebarMenuItemIcon}>{item.icon}</div>
+        <div className={styles.sidebarMenuItemContainer}>
+          <div className={styles.sidebarMenuItemIcon}>{item.icon}</div>
+          <div className={styles.sidebarMenuItemText}></div>
+        </div>
       )}
       {!isSideMenuMinimized && !isMobile && (
         <div className={styles.sidebarMenuItemContainer}>

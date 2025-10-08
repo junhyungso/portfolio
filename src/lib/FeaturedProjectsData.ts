@@ -19,4 +19,22 @@ export const FeaturedProjectsData: ProjectData[] = [
     image: 'https://example.com/images/rosary.png',
     href: '/rosary',
   },
+  {
+    id: 3,
+    title: '2048 Game',
+    description:
+      'A web application that allows users to play the 2048 game. It includes features such as a game board, score tracking, and a user-friendly interface.',
+    link: 'https://2048.example.com',
+    image: 'https://example.com/images/2048.png',
+    href: '/2048',
+  },
+  {
+    id: 3,
+    title: 'This Portfolio',
+    description:
+      'A web application that showcases my portfolio. It includes features such as project showcases, a blog, and a user-friendly interface.',
+    link: 'https://portfolio.example.com',
+    image: 'https://example.com/images/portfolio.png',
+    href: '/portfolio',
+  },
 ];

@@ -7,10 +7,11 @@
   padding: 10px;
   border-radius: 10px;
   color: var(--text-color);
+  width: fit-content;
 }
 
 .sidebarMenuItem:hover {
-  background-color: #717171;
+  background-color: var(--second-bg-color);
 }
 
 @media (max-width: 768px) {
@@ -26,7 +27,7 @@
 }
 
 .sidebarMenuItemIcon {
-  margin-right: 20px;
+  margin: 0 10px;
 }
 
 .sidebarMenuItemText {

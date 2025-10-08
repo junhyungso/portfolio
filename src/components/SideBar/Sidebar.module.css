@@ -1,24 +1,33 @@
-.minimizedSidebar {
-  width: 50px;
-  background-color: #000;
+.minimizedSideBar {
+  width: 240px;
+  background-color: var(--bg-color);
   color: var(--bg-color);
-  padding: 20px;
   min-height: calc(100vh - 144px);
+  z-index: 9999;
+}
+
+@media (max-width: 768px) {
+  .minimizedSideBar {
+    width: 0px;
+    padding: 10px;
+  }
 }
 
 .sideBar {
-  min-width: 216px;
+  width: 216px;
   background-color: var(--bg-color);
-  padding: 20px;
   min-height: calc(100vh - 144px);
-  overflow-y: auto;
+  overflow: hidden;
   border-right: 0.5px solid rgb(162, 162, 162, 0.5);
+  margin-right: 20px;
+  z-index: 9999;
 }
 
 @media (max-width: 768px) {
   .sideBar {
-    min-width: 50px;
-    padding: none;
+    width: 50px;
+    padding: 10px;
+    border: none;
   }
 }
 

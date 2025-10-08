@@ -5,3 +5,11 @@
   border-radius: 16px;
   flex-grow: 1;
 }
+
+@media (max-width: 768px) {
+  .bannerImage {
+    margin: 2rem 0;
+    width: 100%;
+    border-radius: 8px;
+  }
+}

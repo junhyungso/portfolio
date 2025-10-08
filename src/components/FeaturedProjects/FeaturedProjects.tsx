@@ -12,7 +12,6 @@ const FeaturedProjects = ({ projects }: { projects: ProjectData[] }) => {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: 'easeOut' }}
         viewport={{ once: false }}
-        className={styles.featuredSection}
       >
         <ul className={styles.projects}>
           {projects.map((project) => (

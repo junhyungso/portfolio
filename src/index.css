@@ -11,24 +11,24 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  --bg-color: #000000;
+  --bg-color: #0f0f0f;
   --second-bg-color: #121212;
   --outline-color: #333;
   --text-color: #ffffff;
-  --card-bg: #000000;
+  --card-bg: rgba(30, 30, 30, 0.7);
   --button-bg: #1a1a1a;
-  --gradient: linear-gradient(90deg, #292929, #25200f);
+  --gradient: linear-gradient(70deg, #292929, #25150f);
   --accent-color: #ff4d4d;
 }
 
 [data-theme='light'] {
-  --bg-color: #ffffff;
+  --bg-color: ##f1f1f1;
   --second-bg-color: #f9f9f9;
   --outline-color: #ccc;
   --text-color: #0e0e0e;
-  --card-bg: #ffffff;
+  --card-bg: #ededed;
   --button-bg: #ebebeb;
-  --gradient: linear-gradient(90deg, #e3e3e3, #f5f5f5);
+  --gradient: linear-gradient(70deg, #ededed, #ffeeee);
   --accent-color: #ff4d4d;
 }
 

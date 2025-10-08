@@ -61,7 +61,7 @@ const NavBar = ({
         </button>
         {!isMobile && (
           <div className={styles.iconsContainer}>
-            <Link to="/myjourney">
+            <Link to="/">
               <AppsIcon
                 onClick={() => window.open('https://github.com/junhyungso/')}
                 className={styles.linkIcon}

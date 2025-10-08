@@ -1,0 +1,93 @@
+.carouselSection {
+  position: relative;
+  width: 100%;
+  padding: 4rem 2rem;
+}
+
+.heading {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2.5rem;
+  color: var(--text-primary);
+}
+
+/* Carousel container */
+.carouselContainer {
+  display: flex;
+  overflow-x: scroll;
+  gap: 1.5rem;
+  cursor: grab;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+
+.carouselContainer::-webkit-scrollbar {
+  display: none;
+}
+
+/* Card */
+.card {
+  flex: 0 0 320px;
+  background: var(--card-bg);
+  border: 1px solid var(--outline-color);
+  border-radius: 1.25rem;
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  scroll-snap-align: center;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Image */
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  height: 12rem;
+  overflow: hidden;
+  color: var(--text-color);
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Card content */
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 12rem;
+  padding: 1.25rem;
+}
+
+.cardTitle {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--text-color);
+}
+
+.cardDescription {
+  font-size: 0.9rem;
+  color: var(--text-color);
+  line-height: 1.4;
+  margin-bottom: 1rem;
+}
+
+.viewProject {
+  font-size: 0.9rem;
+  color: var(--accent-color);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.viewProject:hover {
+  color: var(--accent-color);
+}
