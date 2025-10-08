@@ -43,7 +43,7 @@ export const FeaturedProjectsData: ProjectData[] = [
 
   {
     id: '5',
-    title: 'This Portfolio',
+    title: 'Portfolio',
     description: 'A web application that showcases my portfolio of projects.',
     link: 'https://junhyungso.com',
     images: [portfolio],
