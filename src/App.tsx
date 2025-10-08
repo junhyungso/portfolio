@@ -5,6 +5,7 @@ import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import Footer from './components/Footer/Footer';
 import LoadingBar from './components/LoadingBar/LoadingBar';
 import NavBar from './components/NavBar/NavBar';
+import ProjectDetails from './components/ProjectDetails/ProjectDetails';
 import Sidebar from './components/SideBar/SideBar';
 import { ThemeProvider } from './context/ThemeContext';
 import Contact from './pages/Contact/Contact';
@@ -51,6 +52,10 @@ const App = () => {
               />
               <Routes>
                 <Route path="/" element={<Home />} />
+                <Route
+                  path="/projects/:projectId"
+                  element={<ProjectDetails />}
+                />
                 <Route path="/projects" element={<Projects />} />
                 <Route path="/myjourney" element={<MyJourney />} />
                 <Route path="/contact" element={<Contact />} />

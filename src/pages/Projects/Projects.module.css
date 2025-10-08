@@ -26,9 +26,7 @@
   display: none;
 }
 
-/* Card */
 .card {
-  flex: 0 0 320px;
   background: var(--card-bg);
   border: 1px solid var(--outline-color);
   border-radius: 1.25rem;
@@ -43,7 +41,6 @@
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
-/* Image */
 .imageWrapper {
   position: relative;
   width: 100%;
@@ -58,7 +55,6 @@
   object-fit: cover;
 }
 
-/* Card content */
 .cardContent {
   display: flex;
   flex-direction: column;

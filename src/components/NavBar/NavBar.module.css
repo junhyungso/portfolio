@@ -48,6 +48,7 @@
 
 .linkIcon {
   margin: 0px 10px;
+  cursor: pointer;
 }
 .themeButton {
   background: none;
@@ -65,4 +66,29 @@
 .resumeButton {
   margin: 10px 0px;
   border: 1px solid var(--outline-color);
+}
+
+.menuList {
+  position: absolute;
+  left: 93%;
+  background-color: var(--second-bg-color);
+  border: 1px solid var(--outline-color);
+  border-radius: 8px;
+  list-style: none;
+  margin: 0;
+  padding: 6px 0;
+  z-index: 9999;
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.menuItem {
+  padding: 8px 12px;
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+.suggestionItem:hover,
+.highlighted {
+  background-color: var(--outline-color);
 }

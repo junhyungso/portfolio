@@ -1,5 +1,6 @@
 // src/pages/Projects.tsx
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 import { FeaturedProjectsData as projects } from '../../lib/FeaturedProjectsData';
 import styles from './Projects.module.css';
 
@@ -24,7 +25,7 @@ const Projects = () => {
           >
             <div className={styles.imageWrapper}>
               <img
-                src={project.image}
+                src={project.images?.[0]}
                 alt={project.title}
                 className={styles.image}
               />
@@ -34,12 +35,12 @@ const Projects = () => {
                 <h3 className={styles.cardTitle}>{project.title}</h3>
                 <p className={styles.cardDescription}>{project.description}</p>
               </div>
-              <a
-                href={`${'/projects'}${project.href}`}
+              <Link
+                to={`${'/projects/'}${project.id}`}
                 className={styles.viewProject}
               >
                 View Project →
-              </a>
+              </Link>
             </div>
           </motion.div>
         ))}

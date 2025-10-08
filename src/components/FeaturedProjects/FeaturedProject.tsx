@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { ProjectData } from '../../types/types';
 import styles from './FeaturedProject.module.css';
 
@@ -14,9 +15,12 @@ const FeaturedProject = ({ project }: { project: ProjectData }) => {
       <h2 className={styles.projectTitle}>{project.title}</h2>
       <p className={styles.projectDescription}>{project.description}</p>
       {project.link && (
-        <a href={project.link} className={styles.projectLink}>
+        <Link
+          to={`${'/projects/'}${project.id}`}
+          className={styles.projectLink}
+        >
           View Project
-        </a>
+        </Link>
       )}
     </li>
   );

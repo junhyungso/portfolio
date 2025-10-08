@@ -28,8 +28,15 @@ const NavBar = ({
     setIsSideMenuMinimized(!isSideMenuMinimized);
   };
   const [searchQuery, setSearchQuery] = useState('');
+  const [showMenu, setShowMenu] = useState(false);
+  const [highlightedMenuIndex, setHighlightedMenuIndex] = useState(-1);
+
   const { theme, toggleTheme } = useTheme();
   const isMobile = useMediaQuery('(max-width: 768px)');
+
+  const menuList = ['LinkedIn', 'Github', 'Link to Portfolio Code'];
+
+  const handleMenuSelect = (menuItem: string) => {};
 
   return (
     <div className={styles.navBar}>
@@ -61,13 +68,26 @@ const NavBar = ({
         </button>
         {!isMobile && (
           <div className={styles.iconsContainer}>
-            <Link to="/">
-              <AppsIcon
-                onClick={() => window.open('https://github.com/junhyungso/')}
-                className={styles.linkIcon}
-                fontSize="large"
-              />
-            </Link>
+            <AppsIcon
+              onClick={() => setShowMenu((prev) => !prev)}
+              className={styles.linkIcon}
+              fontSize="large"
+            />
+            {showMenu && (
+              <ul className={styles.menuList}>
+                {menuList.map((menuItem, index) => (
+                  <li
+                    key={index}
+                    onClick={() => handleMenuSelect(menuItem)}
+                    className={`${styles.suggestionItem} ${
+                      index === highlightedMenuIndex ? styles.highlighted : ''
+                    }`}
+                  >
+                    {menuItem}
+                  </li>
+                ))}
+              </ul>
+            )}
             <Link to="/contact">
               <AccountIcon fontSize="large" />
             </Link>
