@@ -36,8 +36,7 @@ const NavBar = ({
   const menuList = ['LinkedIn', 'Github', 'Link to Portfolio'];
 
   const handleMenuSelect = (menuItem: string) => {
-    const menuIndex = menuList.findIndex((menu) => menu === menuItem);
-    setHighlightedMenuIndex(menuIndex);
+    setHighlightedMenuIndex(-1);
     if (menuItem === 'LinkedIn') {
       window.open('https://www.linkedin.com/in/junhyungso/');
     } else if (menuItem === 'Github') {
@@ -88,7 +87,7 @@ const NavBar = ({
                   <li
                     key={index}
                     onClick={() => handleMenuSelect(menuItem)}
-                    className={`${styles.suggestionItem} ${
+                    className={`${styles.menuItem} ${
                       index === highlightedMenuIndex ? styles.highlighted : ''
                     }`}
                   >

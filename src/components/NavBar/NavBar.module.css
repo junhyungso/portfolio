@@ -49,6 +49,7 @@
 .linkIcon {
   margin: 0px 10px;
   cursor: pointer;
+  color: var(--text-color);
 }
 .themeButton {
   background: none;
@@ -76,19 +77,19 @@
   border-radius: 8px;
   list-style: none;
   margin: 0;
-  padding: 6px 0;
+  padding: 6px 0px;
   z-index: 9999;
   max-height: 500px;
   overflow-y: auto;
+  color: var(--text-color);
 }
 
 .menuItem {
   padding: 8px 12px;
-  color: var(--text-color);
   cursor: pointer;
 }
 
-.suggestionItem:hover,
+.menuItem:hover,
 .highlighted {
   background-color: var(--outline-color);
 }

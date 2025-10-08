@@ -26,14 +26,6 @@ export const FeaturedProjectsData: ProjectData[] = [
   },
   {
     id: '3',
-    title: '2048 Game',
-    description: 'A 2048 game we all used to play when younger.',
-    images: [game2048],
-    href: '/2048',
-    github: 'https://github.com/junhyungso/2048game',
-  },
-  {
-    id: '4',
     title: 'Kanban',
     description: 'A simple kanban board that allows me to organize my tasks.',
     images: [kanban],
@@ -42,6 +34,15 @@ export const FeaturedProjectsData: ProjectData[] = [
   },
   {
     id: '4',
+    title: '2048 Game',
+    description: 'A 2048 game we all used to play when younger.',
+    images: [game2048],
+    href: '/2048',
+    github: 'https://github.com/junhyungso/2048game',
+  },
+
+  {
+    id: '5',
     title: 'This Portfolio',
     description: 'A web application that showcases my portfolio of projects.',
     link: 'https://junhyungso.com',
