@@ -4,7 +4,7 @@
   max-width: 750px;
   margin: 10px 0px;
   height: 56px;
-  position: relative; /* ensures absolute children position correctly */
+  position: relative;
 }
 
 .searchBar {

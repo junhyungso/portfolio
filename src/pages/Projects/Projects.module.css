@@ -12,7 +12,6 @@
   color: var(--text-primary);
 }
 
-/* Carousel container */
 .carouselContainer {
   display: flex;
   overflow-x: scroll;

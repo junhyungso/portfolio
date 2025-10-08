@@ -1,4 +1,3 @@
-// src/App.tsx
 import { useMediaQuery } from '@mui/material';
 import { useEffect, useState } from 'react';
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';

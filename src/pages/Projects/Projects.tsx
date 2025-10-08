@@ -1,4 +1,3 @@
-// src/pages/Projects.tsx
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { FeaturedProjectsData as projects } from '../../lib/FeaturedProjectsData';

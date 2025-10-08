@@ -1,4 +1,3 @@
-// src/components/Header.tsx
 import AccountIcon from '@mui/icons-material/AccountCircle';
 import AppsIcon from '@mui/icons-material/Apps';
 import MenuIcon from '@mui/icons-material/Menu';
