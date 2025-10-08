@@ -5,9 +5,9 @@ import styles from './FeaturedProject.module.css';
 const FeaturedProject = ({ project }: { project: ProjectData }) => {
   return (
     <li className={styles.project}>
-      {project.image && (
+      {project.images && (
         <img
-          src={project.image}
+          src={project.images?.[0]}
           alt={project.title}
           className={styles.projectImage}
         />

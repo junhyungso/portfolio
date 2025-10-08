@@ -34,9 +34,19 @@ const NavBar = ({
   const { theme, toggleTheme } = useTheme();
   const isMobile = useMediaQuery('(max-width: 768px)');
 
-  const menuList = ['LinkedIn', 'Github', 'Link to Portfolio Code'];
+  const menuList = ['LinkedIn', 'Github', 'Link to Portfolio'];
 
-  const handleMenuSelect = (menuItem: string) => {};
+  const handleMenuSelect = (menuItem: string) => {
+    const menuIndex = menuList.findIndex((menu) => menu === menuItem);
+    setHighlightedMenuIndex(menuIndex);
+    if (menuItem === 'LinkedIn') {
+      window.open('https://www.linkedin.com/in/junhyungso/');
+    } else if (menuItem === 'Github') {
+      window.open('https://github.com/junhyungso/');
+    } else {
+      window.open('https://github.com/junhyungso/portfolio');
+    }
+  };
 
   return (
     <div className={styles.navBar}>
