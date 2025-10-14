@@ -15,9 +15,8 @@ const FeaturedProject = ({ project }: { project: ProjectData }) => {
             />
           </div>
         )}
-        <h2 className={styles.projectTitle}>{project.title}</h2>
-        <p className={styles.projectDescription}>{project.description}</p>
       </Link>
+      <h2 className={styles.projectTitle}>{project.title}</h2>
     </li>
   );
 };
